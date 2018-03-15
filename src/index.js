@@ -6,11 +6,11 @@ import store from "./store";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import registerServiceWorker from "./registerServiceWorker";
-
+import Appcontainer from "./AppContainer";
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <Appcontainer />
     </BrowserRouter>
   </Provider>,
   document.getElementById("root")
